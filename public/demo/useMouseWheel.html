@@ -8,6 +8,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <script type="text/javascript" src="../dist/pinch-zoom.umd.js"></script>
+
+
 </head>
 <body>
 
@@ -19,13 +21,25 @@
                     Multi-touch zoom in Javascript
                 </p>
             </div>
-            <img src="/demo/frog.jpg"/>
+            <div id="imageContainer"></div>
         </div>
     </div>
 
     <script type="text/javascript">
       var el = document.querySelector('div.pinch-zoom');
       new PinchZoom.default(el, { useMouseWheel: true });
+    </script>
+
+    <button id="addImageBtn">Add Image</button>
+
+
+    <script>
+        document.getElementById('addImageBtn').addEventListener('click', function() {
+            var img = document.createElement('img');
+            img.src = '/demo/frog.jpg'; // Replace with your image URL
+            img.alt = 'Placeholder Image';
+            document.getElementById('imageContainer').appendChild(img);
+        });
     </script>
 
 </body>
