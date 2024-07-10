@@ -1,4 +1,9 @@
-# PinchZoom.js
+# PinchZoom.js with Development server
+Run npm run build to execute the build script.
+Run npm run serve for a dev server. Navigate to http://localhost:3000/.
+ 
+
+# PinchZoom.js - Original
 
 PinchZoom is a Javascript library providing multi-touch gestures for zooming and dragging on any DOM element.
 

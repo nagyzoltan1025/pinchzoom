@@ -10,7 +10,6 @@
     }]
   ],
   "plugins": [
-    // https://github.com/babel/babel/issues/7347
     ["transform-es2015-modules-umd", {
       "globals": {
         "pinch-zoom": "PinchZoom"
